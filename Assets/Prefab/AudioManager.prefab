@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4551793901093290045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4551793901093290044}
+  - component: {fileID: 8009477984601244550}
+  m_Layer: 0
+  m_Name: AudioManager 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4551793901093290044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4551793901093290045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8009477984601244550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4551793901093290045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b66174837b845b4f8010f5f62df8e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: b5a1714ba8c31f1488ea261ed094f6e0, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: PlayerDash
+    clip: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+    volume: 0.1
+    pitch: 1.4
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerHeavyLand
+    clip: {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
+    volume: 0.2
+    pitch: 0.69
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerLandGrass
+    clip: {fileID: 8300000, guid: 23a0ff2e251ab8547873a99513c4570c, type: 3}
+    volume: 0.2
+    pitch: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerFootstepsGrass
+    clip: {fileID: 8300000, guid: 9a78429f500dbf14eaf37695e4e8f887, type: 3}
+    volume: 0.4
+    pitch: 0.33
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerSwordSwing
+    clip: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+    volume: 0.1
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
+  - name: Switch
+    clip: {fileID: 8300000, guid: be85e743f3e19ca4eafc71fc606283b0, type: 3}
+    volume: 0.3
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
+  - name: Coin
+    clip: {fileID: 8300000, guid: a932d32fca391cd48b4a00bba29315cd, type: 3}
+    volume: 0.3
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
