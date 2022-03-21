@@ -10,7 +10,7 @@ Arrow keys: movement
 
 Space: jump
 
-S: attack
+left click: attack
 
-D: dash
+right click: dash
 
