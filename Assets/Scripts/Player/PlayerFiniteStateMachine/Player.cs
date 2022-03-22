@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
 
     public bool isDead;
     public bool hasKey;
+    public int coinCount;
     public int FacingDirection { get; private set; }  
     public int currentHealth;
     public Vector2 CurrentVelocity { get; private set; }
@@ -86,6 +87,7 @@ public class Player : MonoBehaviour
         currentHealth = playerData.maxHealth;
         isDead = false;
         hasKey = false;
+        coinCount=0;
 
         StateMachine.Initialize(SpawnState);
     }
