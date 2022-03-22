@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
     #region Other Variables
 
     public bool isDead;
+    public bool hasKey;
     public int FacingDirection { get; private set; }  
     public int currentHealth;
     public Vector2 CurrentVelocity { get; private set; }
@@ -84,6 +85,7 @@ public class Player : MonoBehaviour
         FacingDirection = 1;
         currentHealth = playerData.maxHealth;
         isDead = false;
+        hasKey = false;
 
         StateMachine.Initialize(SpawnState);
     }
@@ -97,6 +99,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+ 
         StateMachine.CurrentState.PhysicsUpdate();
     }
     #endregion
