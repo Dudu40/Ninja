@@ -56,7 +56,7 @@ public class InAirState : PlayerState
         dashInput = player.InputHandler.DashInput;
         attackInput = player.InputHandler.AttackInput;
         isDead = player.isDead;
-
+        CheckDoubleJump();
         CheckJumpMultiplier();
         UpdateFallTime();
         
@@ -94,6 +94,12 @@ public class InAirState : PlayerState
             //Uncomment this if you have different animations for standing jump and moving jump. Remember to set xVelocity in animator, and update blend tree.
             //player.Anim.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));
         }
+    }
+
+    private void CheckDoubleJump(){
+     if(player.CheckIfTouchingWall() && isJumping){
+       player.JumpState.ResetAmountOfJumpsLeft();
+     }
     }
 
     private void CheckJumpMultiplier()

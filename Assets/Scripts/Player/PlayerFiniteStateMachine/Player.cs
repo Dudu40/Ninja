@@ -221,7 +221,7 @@ public class Player : MonoBehaviour
     private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
     private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
-    private void Flip()
+    public void Flip()
     {
         FacingDirection *= -1;
         transform.Rotate(0.0f, 180.0f, 0.0f);
@@ -298,7 +298,8 @@ public class Player : MonoBehaviour
         {
             //player dead
             isDead = true;
-            FindObjectOfType<GameManager>().Respawn();
+           this.SetVelocityZero();
+          FindObjectOfType<GameManager>().Respawn();
         }
     }
 

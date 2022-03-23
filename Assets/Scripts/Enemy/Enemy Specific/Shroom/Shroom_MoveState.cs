@@ -23,7 +23,6 @@ public class Shroom_MoveState : EnemyMoveState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-
         if (isDetectingWall || !isDetectingLedge)
         {
             shroom.idleState.SetFlipAfterIdle(true);
