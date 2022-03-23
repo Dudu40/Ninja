@@ -97,9 +97,6 @@ public class InAirState : PlayerState
     }
 
     private void CheckDoubleJump(){
-     if(player.CheckIfTouchingWall() && isJumping){
-       player.JumpState.ResetAmountOfJumpsLeft();
-     }
     }
 
     private void CheckJumpMultiplier()
